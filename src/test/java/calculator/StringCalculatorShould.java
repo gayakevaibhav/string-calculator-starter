@@ -1,8 +1,9 @@
 package calculator;
 
-import org.junit.jupiter.api.Test;
+import static org.testng.Assert.assertEquals;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.testng.annotations.Test;
+
 
 class StringCalculatorShould {
 
@@ -12,9 +13,5 @@ class StringCalculatorShould {
         assertEquals(0, stringCalculator.add(""));
     }
 
-    @Test
-    void string_with_single_number_should_return_number_as_int() {
-        StringCalculator stringCalculator = new StringCalculator();
-        assertEquals(1, stringCalculator.add("1"));
-    }
+ 
 }
