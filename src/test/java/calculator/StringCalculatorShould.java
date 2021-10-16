@@ -40,4 +40,11 @@ class StringCalculatorShould {
 	public void twoNumbersNewLineDelimitedReturnSum() throws Exception {
 		assertEquals(stringCalculator.add("1\n2,3"), 6);
 	}
+	
+	//below method to test weather our method supports different delimiter or not
+	 public void multipleDelimiterReturnSum() throws Exception {
+	    	assertEquals(stringCalculator.add("1;2"),3);
+	    }
+	    
+	
 }
