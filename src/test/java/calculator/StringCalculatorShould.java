@@ -30,5 +30,8 @@ class StringCalculatorShould {
     	assertEquals(stringCalculator.add("1,2"),3);
     }
     
+    public void threeNumbersDelimitedBothWayReturnSum() throws Exception{
+    	assertEquals(stringCalculator.add("1,2,3"),6);
+    }
     
 }

@@ -13,13 +13,20 @@ class StringCalculator {
 			return stringToInt(input);
 		}
 		else {
-			return getSum(numbers[0],numbers[1]);
+			return getSum(numbers);
 		}
 
 	}
-	private int getSum(String numA , String numB) {
-		return Integer.parseInt(numA)+Integer.parseInt(numB);
-	}
+	   private int getSum(String numbers[])  {    	
+	      	int sum=0;
+	    	for(String current:numbers) {
+	    		if(stringToInt(current)>1000) {
+	    			continue;
+	    		}
+	    		 sum = sum+Integer.parseInt(current);
+	    	}
+	    	return sum;
+	    }
 
 	private boolean isEmpty(String input) {
 		return input.isEmpty();
