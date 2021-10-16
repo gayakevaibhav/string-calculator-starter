@@ -25,6 +25,10 @@ class StringCalculatorShould {
         assertEquals(stringCalculator.add("1"),1);
     }
     
+    //Below Method takes two numbers as an input and test with their addition
+    public void twoNumbersCommaDelimitedReturnSum()throws Exception {
+    	assertEquals(stringCalculator.add("1,2"),3);
+    }
     
     
 }
