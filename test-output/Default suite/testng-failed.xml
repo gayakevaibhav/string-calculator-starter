@@ -5,7 +5,7 @@
     <classes>
       <class name="calculator.StringCalculatorShould">
         <methods>
-          <include name="threeNumbersDelimitedBothWayReturnSum"/>
+          <include name="multipleDelimiterReturnSum"/>
           <include name="init"/>
         </methods>
       </class> <!-- calculator.StringCalculatorShould -->
